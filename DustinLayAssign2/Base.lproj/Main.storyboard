@@ -134,6 +134,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Wellness Coach" id="bd0-kN-Md1"/>
+                    <connections>
+                        <outlet property="uiView1" destination="eW8-xP-AQF" id="exq-ll-O6C"/>
+                        <outlet property="uiView2" destination="mPd-Jp-deT" id="ka3-vB-Oy6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -165,7 +169,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Waiting for input..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WHc-vt-0hy">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Waiting for input..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="WHc-vt-0hy">
                                 <rect key="frame" x="20" y="553" width="362" height="36"/>
                                 <color key="backgroundColor" red="0.62704661399999995" green="1" blue="0.61503976159999996" alpha="0.21319621599999999" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
@@ -250,6 +254,9 @@
                                 <buttonConfiguration key="configuration" style="filled" title="Simulate Day">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="35"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="simDayButton:" destination="WiT-ol-IcE" eventType="touchUpInside" id="kal-16-DbZ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="CSX-SQ-BIQ"/>
@@ -308,6 +315,15 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Meal Planner" id="vGl-vd-pP6"/>
+                    <connections>
+                        <outlet property="activityMinsText" destination="M0J-bM-QBX" id="IKN-A6-0IJ"/>
+                        <outlet property="balanceLabel" destination="WHc-vt-0hy" id="AIt-Fr-9XK"/>
+                        <outlet property="mealCalsText" destination="UGj-vr-M79" id="MR9-K5-hcE"/>
+                        <outlet property="snackCalsText" destination="p0Y-6z-O69" id="vpC-Zx-pIa"/>
+                        <outlet property="statusLabel" destination="CoX-PB-lud" id="JCL-pu-2OU"/>
+                        <outlet property="stepsRemainingLabel" destination="1Q0-G1-6kz" id="kh2-Wh-8Ln"/>
+                        <outlet property="stepsText" destination="lNX-Yx-nIy" id="kGm-tK-4Py"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O9I-b4-oGE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
